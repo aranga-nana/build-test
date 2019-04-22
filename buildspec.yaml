@@ -4,7 +4,7 @@ phases:
     commands:
       - npm install --prefix ./time-app/
       - export BUCKET=source.ops.acnonline.net
-      - aws cloudformation package --template-file template.yaml --s3-bucket $BUCKET --output-template-file outputtemplate.yaml
+      - aws cloudformation package --template-file template.yaml --s3-bucket source.ops.acnonline.net --output-template-file outputtemplate.yaml
 artifacts:
   type: zip
   files:
